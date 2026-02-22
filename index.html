@@ -14,3 +14,65 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Particle Background</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0d0d0d;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        top: 40vh;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="content">
+    <h1>Arkerderacker website</h1>
+</div>
+
+<!-- particles.js library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 100 },
+    size: { value: 3 },
+    color: { value: "#ffffff" },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  }
+});
+</script>
+
+</body>
+</html>
